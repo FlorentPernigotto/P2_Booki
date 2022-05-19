@@ -1,0 +1,766 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+html, body{
+
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+#bloc-page{
+
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+
+/* Logo du site */
+
+.logo{
+
+    height: 50px;
+    width: 100px;
+
+}
+
+/* Onglet de navigation TOP RIGHT */
+
+nav{
+
+    display: flex;
+    width: 300px;
+    height: 100%;
+
+}
+
+nav ul{
+
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+nav ul li{
+
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+
+}
+
+nav ul li:hover{
+
+    border-top: 3px solid #0065FC;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+nav a:hover{
+
+    color: #0065FC;
+
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* Section 1 block de recherche */
+
+
+.search-block{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    flex-wrap: wrap;
+    height: auto;
+
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.search-block h1{
+
+    margin-bottom: 5px;
+    font-size: 20px;
+
+}
+.search-block p{
+
+    margin: 0;
+
+}
+
+/* Barre de recherche */
+
+#search-bar{
+
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    height: 35px;
+    margin-top: 10px;
+
+}
+
+/* ico marker search-bar */
+
+.fa-map-marker-alt{
+
+    background-color: #F2F2F2;
+    border: 10px solid #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+
+}
+
+#type-search{
+
+    width: 160px;
+    height: 100%;
+    color: black;
+    font-size: 13px;
+    border: 1px solid #F2F2F2;
+
+    
+}
+
+#button-search{
+
+    background-color: #0065FC;
+    width: 93px;
+    height: 100%;
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#button-search:hover{
+
+    border: 1px solid #DEEBFF;
+
+}
+
+/* icone loupe désactiver sous format desktop */
+
+#button-search-ico{
+
+    display: none;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 25%;
+    border: 0px solid black;
+    width: auto;
+    height: 35px;
+    position: absolute;
+    left: 90%;
+
+}
+#button-search-ico:hover{
+
+    transform: scale(1.25);
+
+}
+.fa-search{
+
+    display: flex;
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+
+}
+
+/* Filtre de recherches */
+
+#filter{
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+
+#filter h2{
+
+    font-size: medium;
+    margin-right: 20px;
+
+}
+
+#filter ul{
+
+    display: flex;
+    list-style-type: none;
+    justify-content: left;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    
+}
+#filter ul li{
+
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    width: auto;
+    height: 36px;
+    padding: 10px 10px 10px 0px;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+#filter ul li:hover{
+
+    transform: scale(1.10);
+    border-radius: 25px;
+
+}
+
+#filter .fas{
+
+    display: flex;
+    width: 36px;
+    height: 36px;
+    color: #0065FC;
+    border-radius: 50%;
+    background-color:#DEEBFF;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: -2px;
+
+}
+
+section p i{
+
+    color: #0065FC;
+    border: 3px solid #F2F2F2;
+    font-size: 10px;
+    border-radius: 50px;
+    padding: 3px 6px 3px 6px;
+
+}
+
+section p{
+
+    font-size: small;
+
+}
+
+/* résultats de recherches hébergements */
+
+#results{
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+}
+
+#results-accommodation{
+
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+
+}
+
+#results-accommodation h1{
+
+    display: flex;
+    margin: 0;
+    padding: 20px 0 20px 40px;
+    
+}
+
+#accommodation{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+
+.more-accommodation{
+    display: inline-block;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+
+
+}
+
+.more-accommodation a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+
+}
+.more-accommodation a:hover{
+
+    padding: 10px;
+    box-shadow: 1px 0.75px 0.75px 0.5px #0065FC;
+    border-radius: 10px;
+    transform: scale(1.10);
+    transition-duration: 2s;
+
+}
+
+/* Lien carte cliquable */
+
+#accommodation a{
+
+    display: flex;
+    text-decoration: none;
+    width: calc( ( 100% / 3 ) - ( 20px * 2 ) );
+    height: calc( ( 80% / 2 ) - ( 30px * 2 ));
+    color: black;
+
+}
+
+/* Style card hébergement */
+
+.card-accommodation{
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    
+}
+
+.card-accommodation:hover{
+    
+    transform: scale(1.10);
+    transition: 0.50s;
+
+}
+.card-accommodation img{
+
+    display: flex;
+    width: 100%;
+    height: 125px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+
+}
+
+
+.info-accommodation{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 10px;
+
+}
+
+h2{
+
+    display: flex;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.info-accommodation p{
+
+    display: flex;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+}
+
+.info-accommodation .rated{
+
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+
+}
+
+/* style rated stars*/
+
+.blue-star{
+
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    color: #0065FC;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    
+}
+
+.grey-star{
+
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    color: #F2F2F2;
+    margin-left: 0px;
+    margin-bottom: 5px;
+
+}
+
+/* les plus populaires / aside */
+
+#results-popular{
+
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+
+}
+
+#results-popular h1{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    
+}
+
+#popular{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 0 20px 0 20px;
+}
+
+/* Carte cliquable */
+
+#popular a{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: calc(( 100% / 3) - ( 20px * 2 ) );
+    color: black;
+}
+
+/* Style card populaires */
+
+.card-popular{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card-popular:hover{
+
+    transform: scale(1.10);
+    transition-duration: 0.25s;
+}
+
+.card-popular img{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.info-popular{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px 30px 5px 10px;
+}
+
+.info-popular h2{
+    display: flex;
+    font-size: 13px;
+}
+
+.info-popular p{
+    display: flex;
+    font-size: 11px;
+    margin: 0;
+}
+
+
+
+.rated:nth-child(n){
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    padding: 0%;
+    height: 60%;
+    align-items: flex-end;
+
+}
+
+/* Activity's container */
+
+#activity{
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 30px;
+
+}
+
+#activity-card-container{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+#activity-card-container h2{
+
+    display: flex;
+    font-size: 13px;
+    margin: 20px 0px 20px 15px;
+
+}
+
+/* Cartes cliquable */
+
+#activity-card-container a{
+
+    display: flex;
+    text-decoration: none;
+    color: black;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+#double-card-1st-style a{
+
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Style High card*/
+
+.activity-high{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+
+.activity-high img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* 1st Style Double card */ 
+
+.double-card-1st-style{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.activity-midd-1st{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    
+}
+
+.activity-midd-1st img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.activity-small-1st{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.activity-small-1st img{
+    width: 100%;
+    height: 125px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+/* Double Card 2nd style */
+
+.double-card-2nd-style{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.activity-midd-2nd{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.activity-midd-2nd img{
+    width: 100%;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+/* lien des carte activités */
+
+.activity-high:hover, .activity-midd-1st:hover,.activity-midd-2nd:hover, .activity-small-1st:hover{
+
+    transform: scale(1.10);
+    transition: 0.25s;
+
+}
+
+/* pîed de page */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 25px;
+    height: auto;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li{
+    line-height: 30px;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#footer-about{
+    width: 33%;
+}
+
+#footer-accommodation{
+    width: 33%;
+}
+
+#footer-assistance{
+    width: 33%;
+
+}
+
